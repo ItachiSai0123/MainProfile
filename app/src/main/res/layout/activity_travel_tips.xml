@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Travel_tips">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="621dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="366dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_main"
+                android:elevation="10dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="Travel Tips"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/main"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="365dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="20dp"
+                    android:shadowRadius="100"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableRight="@drawable/next_main"
+                    android:text="Culture" />
+
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableRight="@drawable/next_main"
+                    android:text="Local Language" />
+
+
+
+
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:elevation="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:drawableRight="@drawable/next_main"
+            android:text="Backpacking Guide" />
+
+
+
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableRight="@drawable/next_main"
+                    android:text="Guide to States and Regions" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

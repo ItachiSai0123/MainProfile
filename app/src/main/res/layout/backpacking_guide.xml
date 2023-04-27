@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bckpacking_guide">
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin">
+
+        <ImageButton
+            android:id="@+id/backBtnBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="366dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_main"
+            android:elevation="10dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/titleBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backpacking Guide"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_below="@+id/titleBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Here are some tips for backpackers traveling to Malaysia:">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:text="Dress appropriately">
+
+            </TextView>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Malaysia is a predominantly Muslim country, so it's important to dress modestly, especially when visiting religious sites or in rural areas. Avoid wearing revealing clothing, shorts, or tank tops, and opt for loose-fitting, lightweight clothing to cope with the humid weather.">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Learn some basic Malay">
+
+            </TextView>
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:lineSpacingExtra="7dp"
+
+                android:text="While English is widely spoken in Malaysia, it's always a good idea to learn some basic Malay phrases to help you communicate with locals and make your experience more enjoyable.">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Stay hydrated">
+
+            </TextView>
+
+
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Malaysia is a hot and humid country, so make sure you drink plenty of water to avoid dehydration. It's a good idea to carry a refillable water bottle with you at all times.">
+
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Be aware of scams">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+
+
+                android:text="As a tourist, you may encounter scams or touts trying to rip you off. Be aware of your surroundings and keep an eye on your belongings. Don't fall for scams such as overpriced tours or fake goods.">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Try local street food">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Malaysia is famous for its street food, which is cheap and delicious. Don't be afraid to try new things and explore the local cuisine.">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Respect local customs and traditions">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Malaysia is a multicultural country with diverse customs and traditions. Respect local customs, such as removing your shoes before entering someone's home or a mosque.">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+
+                android:text="Be respectful of the environment">
+
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:lineSpacingExtra="7dp"
+
+                android:text=" Malaysia has some beautiful natural landscapes, so it's important to take care of the environment. Don't litter, avoid using single-use plastics, and choose eco-friendly activities such as hiking or cycling.">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+
+                android:padding="10dp"
+                android:text="Malaysia is a fascinating and affordable destination for backpackers with plenty to see and do. With this travel guide, you should be well on your way to planning an unforgettable trip.">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

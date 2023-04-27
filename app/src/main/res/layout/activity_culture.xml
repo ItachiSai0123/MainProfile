@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Culture">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin">
+
+        <ImageButton
+            android:id="@+id/backBtnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="366dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_main"
+            android:elevation="10dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/titleCul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Malaysia Culture"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:id="@+id/scrollViewC"
+        android:layout_below="@id/titleCul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="The people of Malaysia are a mosaic of Chinese, Indian and native Malay influence. " />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                app:srcCompat="@drawable/m_ppl" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:text="Chinese"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:text="25% of the population"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:lineSpacingExtra="-8dp"
+                        android:text="3 main dialects of Chinese\n\nlanguages\n\nbeing spoken:\n\nHokkien, Cantonese\n\nand Mandarin speakers"/>
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="Indian"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:text="10% of the population"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:text="Tamil-speaking"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="Malay"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:text="largest ethnic group"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:text="speak in the native Malay language"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                app:srcCompat="@drawable/orang_asli" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Orang Asli or original people, are found in the Peninsular region and have several different groups with their own language and cultural traditions. The largest ethnic groups tend to live in Sabah, including the Kadazan Dusuns, who are typically farmers in hilly regions; Bajaus, a seafaring community; and the Murut, who also make their living from hunting, fishing and cultivation.
+In Sarawak, you can find major ethnic groups known as Dayaks, the Iban, Bidayuh and Orang Ulu. Meanwhile, the Penang people are traditional nomadic people who move around the rainforest.\n
+" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Religion and Festivals" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="369dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/festival" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Most world religions are prevalent in the country including Islam, Christianity, Hinduism and Buddhism. Islam is the largest and official religion of the country." />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="All major festivals:" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Eid, Chinese New Year, Diwali, and Christmas , Hari Raya Aidilfitri, Awal Muharram, Sabah Kaamatan Festival ,Sarawak Gawai Festival ,Hindu Thaipusam festival.\n" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Crafts, music and dance" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="The booming handicrafts industry is influenced by Islam, and much of the designs are influenced by nature. It is easy to purchase pottery, wooden crafts, bronze and brass work in most regions, and you can find everything from traditional silver jewelry to tribal headdresses!
+The native Orang Ulu are particularly noted for their artistic ability, with wood carvings, murals, and intricate beadwork, as well as spirit sculptures. Handwoven crafts made from local plant fibers, and traditional textiles such as batiks (dyed materials) and songket (woven with gold thread) are offered for everything from designer clothing to simple and colorful homewares.
+" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="Gamelan and the nobat" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/gamelan" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="the two traditional orchestras, as well as the rebana uni drums, the kompang (similar to a tambourine), and the sape, a traditional flute, for enjoying the native music of the region.\n" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Popular music and dance of Malaysia:" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="&#8226; Datun Julud: Hornbill dance performed by Sarawak’s Kenyah women
+                \n&#8226; Joget: traditional lively dance with quick tempos
+                \n&#8226; Lion dance / dragon dances: energetic dance performed to celebrate Chinese New Year
+                \n&#8226; Bharatanatyam / Bhangra: traditional Indian classical and folk dances respectively
+                \n&#8226; Silat: Malay martial arts\n" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Architecture" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:text="Much of Malaysia’s architecture was influenced by colonial rulers (British, Dutch and Portuguese). " />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/building" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:text="George Town and the Sultan Abdul Samad Building in Kuala Lumpur to witness excellent examples of British architecture" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/melaka" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Melaka Town for 17th century Dutch and 16th century Portuguese influences. Chinese architecture can be found in many Chinese temples and heritage homes that date back to the 17th century, especially in Melaka and Penang." />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/moorish" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Many modern buildings have Moorish design elements due to Islamic influence and beautiful mosques can be explored throughout the length and breadth of the country. " />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/sabah_sarawak" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="The indigenous communities in Sabah and Sarawak boast wonderful examples of traditional Malay architecture that is constructed on stilts, to ensure houses are cooled and floods are avoided." />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/old_palace" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Old Palace of Seri Menanti in Negeri Sembilan - traditional houses were built out of wood without any nails " />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/longhouses" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="7dp"
+                android:text="Some communities continue to live in traditional longhouses that can house from 20 to 100 families, and water villages built along riverbanks and linked by walkways, with sampan or canoe being the local mode of transport." />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

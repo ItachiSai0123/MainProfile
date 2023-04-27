@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".states_regions">
+
+
+
+
+<androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin">
+
+        <ImageButton
+            android:id="@+id/backBtnSR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="366dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_main"
+            android:elevation="10dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/titleSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="States and Regions"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_below="@+id/titleSR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:textStyle="bold"
+            android:text="Malaysia is divided into 13 states and 3 federal territories, each with its own unique culture, history, and attractions. Here's a guide to the states and regions of Malaysia:">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="1. Johor">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/jblego"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Located in the southern part of the Malay Peninsula, Johor is known for its beautiful islands, white sand beaches, and amusement parks such as Legoland and Hello Kitty Town. Johor Bahru is the state capital and the second-largest city in Malaysia.">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="2. Kedah">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kedah"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Kedah is a state in the northwestern part of Peninsular Malaysia, bordering Thailand. It's known for its historic landmarks, such as the Langkawi Island, which is a popular tourist destination.">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="3. Kelantan">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kelantan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Kelantan is a state in northeastern Malaysia, known for its rich cultural heritage, traditional crafts, and colorful markets. The capital city, Kota Bharu, is home to several museums and cultural centers.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="4. Kuala Lumpur">
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kl"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="The federal territory of Kuala Lumpur is Malaysia's capital city and a vibrant metropolis with iconic landmarks such as the Petronas Twin Towers, Batu Caves, and the KL Tower. It's also known for its shopping malls, street markets, and nightlife.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="5. Labuan">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/labuan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Labuan is a federal territory located off the coast of Sabah, known for its beautiful beaches, diving spots, and duty-free shopping.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="6. Melaka">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/mlk"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Melaka is a historic state on the southwestern coast of Peninsular Malaysia, known for its rich cultural heritage, colonial architecture, and delicious food. The state capital, also named Melaka, is a UNESCO World Heritage site.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="7. Negeri Sembilan">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ns"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Negeri Sembilan is a state located in the western part of Peninsular Malaysia, known for its traditional customs, folklore, and handicrafts. The state capital is Seremban.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="8. Pahang">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pahang"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Pahang is the largest state in Peninsular Malaysia, known for its scenic beauty, including the Taman Negara National Park and the Cameron Highlands. The state capital is Kuantan.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="9. Perak">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/perak"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Perak is a state located in the northern part of Peninsular Malaysia, known for its colonial-era architecture, hot springs, and limestone caves. The state capital is Ipoh.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="10. Perlis">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/perlis"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Perlis is the smallest state in Malaysia, located in the northern part of Peninsular Malaysia, bordering Thailand. It's known for its traditional Malay architecture and handicrafts.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="11. Pulau Pinang">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/penang"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Pulau Pinang, also known as Penang, is a state in northern Malaysia known for its vibrant street art, colonial architecture, and delicious food. The state capital, George Town, is a UNESCO World Heritage site.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="12. Sabah">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sabah"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Sabah is a state located on the island of Borneo, known for its stunning natural beauty, including Mount Kinabalu, the Sepilok Orangutan Rehabilitation Centre, and the Sipadan Island diving site. The state capital is Kota Kinabalu.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="13. Sarawak">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kuching"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Sarawak is a state located on the island of Borneo, known for its rugged landscapes, rainforests, and diverse indigenous cultures. The state capital is Kuching.
+
+">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="14. Selangor">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/selangor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Selangor is a state located in the central part of Peninsular Malaysia, known for its bustling cities, such as Shah Alam and Petaling Jaya, as well as its religious sites, such as the Batu Caves.
+
+">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="15. Terengganu">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:text="Terengganu is a state located on the east coast of Peninsular Malaysia, known for its beautiful beaches and amazing street food.">
+        </TextView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
