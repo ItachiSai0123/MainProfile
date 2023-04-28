@@ -186,6 +186,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private void sendUserData(){
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference reference = firebaseDatabase.getReference(firebaseAuth.getUid());
+        profilePic = "";
         UserProfile userProfile = new UserProfile(email, name, bio, profilePic);
         FirebaseDatabase.getInstance().getReference("user/"+ FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userProfile);
 

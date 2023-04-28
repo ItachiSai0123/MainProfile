@@ -97,7 +97,7 @@ public class UpdateProfile extends AppCompatActivity {
                 newUserBio.setText(userProfile.getUserBio());
 
                 try{
-                    Picasso.get().load(userProfile.getProfilePicture().toString()).into(newProfilePic);
+                    Picasso.get().load(userProfile.getProfilePicture()).into(newProfilePic);
                 }
                 catch (Exception e){
                     Picasso.get().load(R.drawable.default_profile_icon).into(newProfilePic);
@@ -263,31 +263,31 @@ public class UpdateProfile extends AppCompatActivity {
 
         FirebaseStorage.getInstance().getReference("profilePics/" + UUID.randomUUID().toString()).putFile(image_uri)
                 .addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                if (task.isSuccessful()){
-                    task.getResult().getStorage().getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Uri> task) {
-                            if (task.isSuccessful()){
-                                updateProfilePicture(task.getResult().toString());
-                            }
+                    @Override
+                    public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                        if (task.isSuccessful()){
+                            task.getResult().getStorage().getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Uri> task) {
+                                    if (task.isSuccessful()){
+                                        updateProfilePicture(task.getResult().toString());
+                                    }
+                                }
+                            });
+                            Toast.makeText(UpdateProfile.this, "Image Uploaded", Toast.LENGTH_SHORT).show();
                         }
-                    });
-                    Toast.makeText(UpdateProfile.this, "Image Uploaded", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(UpdateProfile.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-                }
-                progressDialog.dismiss();
-            }
-        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        else{
+                            Toast.makeText(UpdateProfile.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                        progressDialog.dismiss();
+                    }
+                }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
                         double progress = 100.0 * snapshot.getBytesTransferred() / snapshot.getTotalByteCount();
                         progressDialog.setMessage("Uploaded " +  (int)progress + "%");
                     }
-        });
+                });
 
 
     }
@@ -312,8 +312,8 @@ public class UpdateProfile extends AppCompatActivity {
     private void pickFromGallery() {
         // Use the Storage Access Framework to pick an image from the gallery
         Intent galleryIntent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-        galleryIntent.addCategory(Intent.CATEGORY_OPENABLE);
         galleryIntent.setType("image/*");
+        galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(galleryIntent, IMAGE_PICK_GALLERY_CODE);
 
     }
